@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drone Operator Survey</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="title">Drone Service Feedback Survey</h1>
+    <p id="description">We'd love your input to improve our drone-based inspection and mapping services.</p>
+
+    <form id="survey-form">
+      <!-- Name -->
+      <label for="name" id="name-label">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+
+      <!-- Email -->
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+
+      <!-- Age or Experience -->
+      <label for="number" id="number-label">Years of Experience with Drone Tech:</label>
+      <input type="number" id="number" name="experience" min="0" max="50" placeholder="e.g., 3" />
+
+      <!-- Dropdown -->
+      <label for="dropdown">Which of our services have you used?</label>
+      <select id="dropdown" name="services">
+        <option value="">--Please choose one--</option>
+        <option value="monitoring">Pipeline Monitoring</option>
+        <option value="mapping">Topographic Mapping</option>
+        <option value="surveillance">Aerial Surveillance</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <p>Would you recommend our services to others?</p>
+      <label>
+        <input type="radio" name="recommend" value="yes" /> Yes
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="no" /> No
+      </label>
+
+      <!-- Checkboxes -->
+      <p>What features matter most to you? (Select all that apply)</p>
+      <label>
+        <input type="checkbox" name="features" value="speed" /> Fast turnaround
+      </label>
+      <label>
+        <input type="checkbox" name="features" value="precision" /> High precision data
+      </label>
+      <label>
+        <input type="checkbox" name="features" value="pricing" /> Competitive pricing
+      </label>
+      <label>
+        <input type="checkbox" name="features" value="support" /> Client support
+      </label>
+
+      <!-- Textarea -->
+      <label for="comments">Additional comments or suggestions:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Your feedback helps us serve you better..."></textarea>
+
+      <!-- Submit -->
+      <button type="submit" id="submit">Submit Feedback</button>
+    </form>
+  </div>
+
+</body>
+</html>
